@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><span>Vittesh B</span></a>
+        <ul class="nav-links">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contact">contact</a>
+            </li>
+        </ul>
+        <i id="menu-icon" class="fa-solid fa-caret-down"></i>
+        <button class="visit">Visit Github</button>
+        <i id="theme-toggle" class="fa-solid fa-moon"></i>
+
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <img src="" alt="Personal Img">
+
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi,I'm</h3>
+                    <h1>Vittesh B</h1>
+                    <span>Frontend Developer</span>
+                    <p class="bio">
+                        I'm a passionate Frontend Developer with a knack for building responsive and interactive
+                        websites.
+                        I love combining clean code with creative design to bring ideas to life on the web.
+                    </p>
+
+                </div>
+
+                <div class="btn">
+                    <div class="btn1">
+                        <a href="Vithesh_B_Web_Developer_Resume.pdf" target="_blank" download>Download CV</a>
+                    </div>
+                    <div class="btn1"><a href="#contact">Contact</a></div>
+                </div>
+                <div class="socials">
+                    <i class="fa-brands fa-square-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <ul class="tags">
+                    <li>🎮 Gamer</li>
+                    <li>🎧 Music Lover</li>
+                    <li>📸 Photographer</li>
+                    <li>👨‍💻 Lifelong Learner</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="Projects">
+        <h2 class="sec-list">Recent Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="laptop-3214756_640.webp" alt="project">
+                <h3>Project 1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto similique nemo aspernatur modi.
+                    Provident labore, voluptate itaque quos delectus dolores?</p>
+                <div class="btn-group">
+                    <div class="btn1">Live Demo</div>
+                    <div class="btn1">Github Repo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="laptop-3214756_640.webp" alt="project">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto similique nemo aspernatur modi.
+                    Provident labore, voluptate itaque quos delectus dolores?</p>
+                <div class="btn-group">
+                    <div class="btn1">Live Demo</div>
+                    <div class="btn1">Github Repo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="laptop-3214756_640.webp" alt="project">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto similique nemo aspernatur modi.
+                    Provident labore, voluptate itaque quos delectus dolores?</p>
+                <div class="btn-group">
+                    <div class="btn1">Live Demo</div>
+                    <div class="btn1">Github Repo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/manjkdrz" method="POST" class="contact-form" data-formspree>
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+  <input type="hidden" name="_subject" value="New message from portfolio contact form" />
+  <button type="submit" class="visit">Send Message</button>
+</form>
+
+        <div id="formMessage" style="display:none; text-align:center; color:green; margin-top:1rem;">
+            ✅ Message sent successfully!
+        </div>
+    </section>
+
+
+    </section>
+    <button id="scrollTopBtn">↑ Top</button>
+    <script src="portfolio.js"></script>
+</body>
+</html>
