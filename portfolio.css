@@ -209,15 +209,22 @@ section{
     gap: 1.7rem;
 }
 
-.socials i{
-    font-size: 2rem;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+.socials i {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  color: black;
 }
 
-.socials i:hover{
-    transform: scale(1.1);
+.socials i:hover {
+  transform: scale(1.1);
 }
+
+/* ✅ Dark mode icon color fix */
+.dark-mode .socials i {
+  color: white;
+}
+
 
 .tags {
     display: flex;
@@ -411,9 +418,9 @@ h2{
   
   .skills {
   padding: 6rem 12%;
-  background-color: #f5f5f5;
-  text-align: center;
   background-color: white;
+  text-align: center;
+  color: black;
 }
 
 .skills h2 {
@@ -431,6 +438,7 @@ h2{
 
 .skills-list li {
   background-color: #e0e0e0;
+  color: black;
   padding: 0.8rem 1.5rem;
   border-radius: 1.5rem;
   font-size: 1rem;
@@ -441,4 +449,20 @@ h2{
 .skills-list li:hover {
   background-color: black;
   color: white;
+}
+
+/* ✅ Dark mode support */
+.dark-mode .skills {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .skills-list li {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+
+.dark-mode .skills-list li:hover {
+  background-color: white;
+  color: black;
 }
