@@ -38,9 +38,9 @@
                 <div class="text">
                     <h3>Hi,I'm</h3>
                     <h1>Vittesh B</h1>
-                    <span>Frontend Developer</span>
+                    <span>Web Developer</span>
                     <p class="bio">
-                        I'm a passionate Frontend Developer with a knack for building responsive and interactive
+                        I'm a passionate Web Developer with a knack for building responsive and interactive
                         websites.
                         I love combining clean code with creative design to bring ideas to life on the web.
                     </p>
@@ -54,8 +54,14 @@
                     <div class="btn1"><a href="#contact">Contact</a></div>
                 </div>
                 <div class="socials">
-                    <i class="fa-brands fa-square-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a style="color: black;" href="https://github.com/vithesh45/Portfolio" target="_blank">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+
+                    <a style="color: black;" href="https://www.linkedin.com/in/vittesh" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
                     <i class="fa-brands fa-instagram"></i>
                 </div>
                 <ul class="tags">
@@ -69,18 +75,30 @@
         </div>
     </section>
 
+    <div id="skills" class="skills">
+        <h2>Additional Skills</h2>
+        <ul class="skills-list">
+            <li>🟢 Express.js</li>
+            <li>🟩 Node.js</li>
+            <li>🍃 MongoDB</li>
+            <li>☕ Basic Java</li>
+            <li>💡 Problem Solving</li>
+            <li>📚 Continuous Learner</li>
+        </ul>
+    </div>
+
 
     <section id="projects" class="Projects">
         <h2 class="sec-list">Recent Projects</h2>
         <div class="project-grid">
             <div class="project-card">
                 <img src="laptop-3214756_640.webp" alt="project">
-                <h3>Project 1</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto similique nemo aspernatur modi.
-                    Provident labore, voluptate itaque quos delectus dolores?</p>
+                <h3>Personal Portfolio Website</h3>
+                <p>A fully responsive portfolio website built using HTML, CSS, and JavaScript. Features include dark
+                    mode, contact form with Formspree, GitHub Pages deployment, and smooth navigation.</p>
                 <div class="btn-group">
-                    <div class="btn1">Live Demo</div>
-                    <div class="btn1">Github Repo</div>
+                    <a href="https://vithesh45.github.io/Portfolio/" class="btn1" target="_blank">Live Demo</a>
+                    <a href="https://github.com/vithesh45/Portfolio" class="btn1">Github Repo</a>
                 </div>
             </div>
 
@@ -110,13 +128,13 @@
 
     <section class="contact" id="contact">
         <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/manjkdrz" method="POST" class="contact-form" data-formspree>
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-  <input type="hidden" name="_subject" value="New message from portfolio contact form" />
-  <button type="submit" class="visit">Send Message</button>
-</form>
+        <form action="https://formspree.io/f/manjkdrz" method="POST" class="contact-form" data-formspree>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <input type="hidden" name="_subject" value="New message from portfolio contact form" />
+            <button type="submit" class="visit">Send Message</button>
+        </form>
 
         <div id="formMessage" style="display:none; text-align:center; color:green; margin-top:1rem;">
             ✅ Message sent successfully!
@@ -128,4 +146,5 @@
     <button id="scrollTopBtn">↑ Top</button>
     <script src="portfolio.js"></script>
 </body>
+
 </html>
