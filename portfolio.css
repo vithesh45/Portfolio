@@ -136,10 +136,20 @@ section{
     gap: 12rem;
 }
 
-.about img{
-    width: 30vh;
-    border-radius: 50%;
+.about img {
+    width: 50vh;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.about img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
 
 .info-box{
     display: flex;
@@ -449,6 +459,22 @@ h2{
 .skills-list li:hover {
   background-color: black;
   color: white;
+}
+
+/* ===== Education Section ===== */
+.about-subsection {
+  margin-top: 4rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-subsection h2 {
+  font-size: 2rem;
+  margin: 2rem 0 1.5rem;
+  color: inherit;
 }
 
 /* ✅ Dark mode support */
